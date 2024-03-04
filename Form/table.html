@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <style>
+    .card {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      background: #fff;
+      border-radius: 8px;
+      padding: 20px;
+      margin: 20px;
+      overflow-x: auto;
+    }
+
+    h2 {
+      text-align: center;
+      color: #333;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      padding: 12px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+
+    .search-container {
+      text-align: right;
+      margin-bottom: 20px;
+    }
+
+    .search-input {
+      width: 200px;
+      padding: 8px;
+    }
+
+    .search-button {
+      padding: 8px;
+      cursor: pointer;
+    }
+
+    .bottom-section {
+      margin-top: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .navigation-buttons {
+      display: flex;
+    }
+
+    .count {
+      font-size: 14px;
+      color: #777;
+    }
+
+    .action-buttons {
+      text-align: center;
+    }
+
+    .approve-btn,
+    .reject-btn {
+      padding: 8px 16px;
+      margin: 4px;
+    }
+  </style>
+  <title>Your Page Title</title>
+</head>
+<body>
+
+  <div class="card">
+    <h2>Travel Request Details</h2>
+
+    <div class="search-container">
+      <input type="text" class="search-input" placeholder="Search...">
+      <button class="btn btn-primary search-button">Search</button>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Request ID</th>
+          <th>Request Raised By Employee ID</th>
+          <th>To Be Approved By HR ID</th>
+          <th>Request Raised On</th>
+          <th>From Date</th>
+          <th>To Date</th>
+          <th>Purpose of Travel</th>
+          <th>Location ID</th>
+          <th>Request Status</th>
+          <th>Request Approved On</th>
+          <th>Priority</th>
+          <th>Action</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Sample data, replace with actual data -->
+        <tr>
+          <td>1</td>
+          <td>1001</td>
+          <td>HR123</td>
+          <td>2024-03-01</td>
+          <td>2024-03-10</td>
+          <td>2024-03-15</td>
+          <td>Business Meeting</td>
+          <td>Location123</td>
+          <td>Pending</td>
+          <td>2024-03-05</td>
+          <td>High</td>
+          <td class="action-buttons">
+            <button class="btn btn-success approve-btn">Approve</button>
+          </td>
+          <td class="action-buttons">
+            <button class="btn btn-danger reject-btn">Reject</button>
+          </td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>1002</td>
+          <td>HR124</td>
+          <td>2024-03-02</td>
+          <td>2024-03-12</td>
+          <td>2024-03-18</td>
+          <td>Training Session</td>
+          <td>Location456</td>
+          <td>Approved</td>
+          <td>2024-03-08</td>
+          <td>Medium</td>
+          <td class="action-buttons">
+            <button class="btn btn-success approve-btn">Approve</button>
+          </td>
+          <td class="action-buttons">
+            <button class="btn btn-danger reject-btn">Reject</button>
+          </td>
+        </tr>
+        <!-- Add more rows as needed -->
+      </tbody>
+    </table>
+
+    <div class="bottom-section">
+      <div class="navigation-buttons">
+        <button class="btn btn-secondary">Previous</button>
+        <button class="btn btn-secondary">Next</button>
+      </div>
+      <div class="count">
+        Displaying 1-2 of 2 entries
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
